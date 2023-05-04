@@ -8,4 +8,9 @@ function Getstart(){
         {
             window.location.href="https://shirleyxiejiawen.github.io/ICT441web/" 
         }
+     var text1= document.getElementById("aa");
+        text1.innerHTML = "You have clicked the button. ";
+        var text2= document.getElementById("bb");
+        text2.innerHTML = "Good you have made it ";
+    
     }
