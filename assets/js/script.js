@@ -32,11 +32,11 @@ function Validate()
 
     //Detection firstName
     if (firstNameValue === '') {
-        document.getElementById("fn").innerHTML = "First Name: Please enter your first name.";
-        isValid = false;
+      alert("Please enter your firstname.");
+      return false;
     } else if (!nameRegex.test(firstNameValue)) {
-        document.getElementById("fn").innerHTML = "First Name: Please enter letters.";
-        isValid = false;
+      alert("Please enter your firstname.");
+      return false;
     } else {
         document.getElementById("fn").innerHTML = "First Name:PASS";document.getElementById("fn").style.color = "Green";}
 
