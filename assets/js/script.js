@@ -62,20 +62,20 @@ function Validate()
 
     // Detection gender
     if (genderValue === '') {
-        document.getElementById("gd").innerHTML = 'Gender: Please select your gender.';
-        isValid = false;
+         alert("Please select your gender.");
+      return false;
     } else if (!genderRegex.test(genderValue)) {
-        document.getElementById("gd").innerHTML = 'Invalid input for gender.';
-        isValid = false;
+        alert("Invalid input for gender.");
+      return false;
     } else {document.getElementById("gd").innerHTML = 'Gender: PASS';document.getElementById("gd").style.color = "Green";}
 
     // Detection enquiry
     if (enquiryValue === '') {
-        document.getElementById("eq").innerHTML = 'Question: Please enter your question';
-        isValid = false;
+       alert(" Please enter your question");
+      return false;
     } else if (enquiryValue.split(/\s+/).length > 150) {
-        document.getElementById("eq").innerHTML = 'Enquiry: Your enquiry should be limited to 150 words.';
-        isValid = false;
+        alert("Your enquiry should be limited to 150 words.");
+      return false;
     } else {document.getElementById("eq").innerHTML = 'Enquiry: PASS';document.getElementById("eq").style.color = "Green";}
 
 }
