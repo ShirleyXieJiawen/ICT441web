@@ -42,21 +42,21 @@ function Validate()
 
     // Detection lastName
     if (lastNameValue === '') {
-        document.getElementById("ln").innerHTML = "Last Name: Please enter your last name.";
-        isValid = false;
+         alert("Please enter your lastname.");
+      return false;
     } else if (!nameRegex.test(lastNameValue)) {
-        document.getElementById("ln").innerHTML = "Last Name: Please enter letters.";
-        isValid = false;
+      alert("Please enter your lastname.");
+      return false;
     } else {document.getElementById("ln").innerHTML = "Last Name:PASS";document.getElementById("ln").style.color = "Green";}
     
 
     // Detection phone
     if (phoneValue === '') {
-        document.getElementById("pn").innerHTML =('Phone Number: Please enter your phone number.');
-        isValid = false;
+        alert("Please enter your phone.");
+      return false;
     } else if (!phoneRegex.test(phoneValue)) {
-        document.getElementById("pn").innerHTML =('Phone Number: Invalid input for phone number.');
-        isValid = false;
+        alert("Please enter your phone.");
+      return false;
     } else {document.getElementById("pn").innerHTML ='Phone Number: PASS';document.getElementById("pn").style.color = "Green";}
 
     // Detection gender
