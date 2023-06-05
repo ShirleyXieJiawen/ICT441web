@@ -7,7 +7,6 @@ const phoneInput = form.querySelector('#phone');
 const genderInput = form.querySelector('#gender');
 const enquiryInput = form.querySelector('#enquiry');
 
-
 function Validate()
 {
    
