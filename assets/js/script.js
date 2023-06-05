@@ -76,6 +76,7 @@ function Validate()
     } else if (enquiryValue.split(/\s+/).length > 150) {
         alert("Your enquiry should be limited to 150 words.");
       return false;
-    } else {document.getElementById("eq").innerHTML = 'Enquiry: PASS';document.getElementById("eq").style.color = "Green";}
+    } else {document.getElementById("eq").innerHTML = 'Enquiry: PASS';document.getElementById("eq").style.color = "Green";
+            alert("All right");}
 
 }
